@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Star Jedi Hollow';
+    src: url("./assets/fonts/StarJediHollow.woff2") format('woff2'),
+        url('./assets/fonts/StarJediHollow.woff') format('woff'),
+        url('./assets/fonts/StarJediHollow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('./assets/fonts/StarJedi.woff2') format('woff2'),
+        url('./assets/fonts/StarJedi.woff') format('woff'),
+        url('./assets/fonts/StarJedi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'moonhouse';
+    src: url('./assets/fonts/moonhouse.woff2') format('woff2'),
+        url('./assets/fonts/moonhouse.woff') format('woff'),
+        url('./assets/fonts/moonhouse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+}
+
+table, td, th {
+    padding: .5rem;
+    border-color: aqua;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+
+.page-link {
+    font-family: 'moonhouse';
+    color: yellow;
+    background-color: black;
+    border-color: yellow ;
+    width: 2em;
+}
+
+.page-item.active .page-link {
+    color: aqua;
+    background-color: black;
+    border-color: aqua;
+}
+
+.page-link:focus, .page-link:hover {
+    color: red;
+    background-color: black;
+    border-color: red;
+}
+
+#table {
+    width: 80%;
+}
+
+#star-wars-header {
+    text-align: center;
+    font-family: 'Star Jedi Hollow';
+    font-style: italic;
+    font-size: 3rem;
+    color: yellow;
+}
+
+#star-wars-link{
+    text-align: end;
+    font-family: 'Star Jedi Hollow';
+    font-size: 2rem;
+    color: white;
+    margin: 1rem;
+}
+
+#search-label {
+    font-family: 'Star Jedi Hollow';
+    font-style: italic;
+    color: red;
+    font-size: 24px;
+}
+
+#search-bar-div {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+#buttons-div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#search-bar {
+    font-family: 'moonhouse';
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    color: red;
+    background-color: black;
+    border-style: double;
+    border-width: 4px;
+    border-radius: 8px;
+    border-color: red;
+}
+
+#search-button {
+    font-family: 'moonhouse';
+    font-size: 24px;
+    margin-top: 10px;
+    margin-right: 5px;
+    text-align: center;
+    color: red;
+    background-color: black;
+    border-style: double;
+    border-width: 4px;
+    border-radius: 8px;
+    border-color: red;
+    outline: none;
+}
+
+#search-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#search-button:active {
+    color: white;
+}
+
+#search-button:disabled {
+    color: gray;
+    border-color: gray;
+}
+
+#clear-button {
+    font-family: 'moonhouse';
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: center;
+    color: yellow;
+    background-color: black;
+    border-style: double;
+    border-width: 4px;
+    border-radius: 8px;
+    border-color: yellow;
+}
+
+#clear-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#clear-button:active {
+    color: white;
+}
+
+#clear-button:disabled {
+    color: gray;
+    border-color: gray;
+}
+
+#lists-table{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 10px;
+}
+
+#lists-table-header {
+    font-family: 'moonhouse';
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+    color: aqua;
+}
+
+#lists-table-body {
+    font-family: 'moonhouse';
+    text-align: center;
+    color: white;
+}
+
+#lists-pagination {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#loading-spinner-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading-spinner {
+    width: 270px;
+    height: 203px;
+}
+
+#search-failed-div {
+    font-family: 'moonhouse';
+    font-size: 56px;
+    font-weight: 100;
+    text-align: center;
+    color: aqua;
+}
